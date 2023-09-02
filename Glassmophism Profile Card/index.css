@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    font-family: "Cambria";
+}
+
+
+.container {
+    min-width: 350px;
+    background: rgba(255, 255,255, .1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-left: 1px solid rgba(255, 255, 255, .1);
+    margin: 20px;
+    overflow: hidden;
+}
+
+.container:hover .parent {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.parent {
+    position: relative;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 20px;
+}
+
+.pro span {
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.position {
+    position: absolute;
+    right: 5px;
+    top: -60px;
+    z-index: -1;
+}
+
+.position span {
+    font-size: 10em;
+    font-family: monospace;
+    color: #000;
+    opacity: 0.1;
+}
+
+.img {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.details {
+    text-align: center;
+    color: #fff;
+}
+
+.details p {
+    width: 200px;
+    margin: 10px auto;
+    line-height: 25px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.buttons button:nth-child(1) {
+    background: #20b2aa;
+    color: #fff;
+}
+
+.buttons button:nth-child(2) {
+    background: transparent;
+    border: 1px solid #20b2aa;
+    color: #fff;
+}
+
+.skills {
+    width: 350px;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    margin-top: 30px;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.flexskills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexskills span {
+    /* border: 1px solid #fff; */
+    margin: 5px;
+    padding: 3px;
+    color: #000;
+    font-weight: bold;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 4px;
+}
